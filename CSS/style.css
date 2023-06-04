@@ -2,7 +2,7 @@
 :root {
 --blue: rgb(0,100,255);
 --grey: rgb(143,143,143);
---lightgrey: #f6f6f6;
+--lightgrey: #f6f5fb	;
 --black: rgb(0,0,0);
 --tblack: rgba(0,0,0,0.5);
 --white:#fffff;
@@ -29,9 +29,9 @@ a {
    height: 0;
 
    }
-#as
+.navigation
 {
-	position:sticky;
+	background-color:var(--lightgrey)
 }
 .hamburger {
 
@@ -131,14 +131,12 @@ a {
 main
 {
 	background-color:var(--lightgrey);
+	height:100%;
+	width:100vw;
+	font-family: 'Courier New';
 }
 
-section img
-{
-	position: absolute;
-	top: 2vh;
-	left: 8vw;
-}
+
 
 .content
 {
@@ -151,7 +149,26 @@ section img
 	top:6vh;
 	background-color:var(--lightgrey);
 	height: 100vh;
-	padding-top:10%;
+}
+
+section img
+{
+	position: absolute;
+	top: 2vh;
+	left: 8vw;
+}
+
+#home img
+{
+	position:absolute;
+	left:0;
+	display:block;
+	max-width: 100%;
+	height:120%;
+	object-fit: cover;
+	object-position: 100% -25vh;
+	
+
 }
 
 #about{
@@ -180,12 +197,21 @@ section img
 
 .content h1
 {
-	color:blue;
+	position:absolute;
+	top:10%;
+	color:black;
+	padding-left:20px;
+	font-size:250%;
+	margin-right:40%;
 }
 .content p
 {
-	color:blue;
 	position:absolute;
+	top:35%;
+	color:black;
+	padding-left:20px;
+	margin-right:40%;
+	font-size:100%;
 }
 
 

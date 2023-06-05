@@ -10,8 +10,11 @@
 	
 	<link rel="stylesheet" href="CSS/reset.css">
 	<link rel="stylesheet" href="CSS/style.css">
-	
+	<link rel="stylesheet" href="CSS/loadingBar.css">
+
 	<script src="JS/js_script.js"></script>
+	
+	
 	
 	<title>House design</title>
 	</head>
@@ -45,17 +48,31 @@
 		<img src = "img/home.jpg" alt="home">
 		<h1>We Design and Develop</h1>
 		<p>We are a new desing studio based in USA. We have over 20 years of combined experiecne, and know a thing or two about designing websites and mobile apps.</p>
-		
+		<button>Contact me!</button>
 		
 		
 	</section>
 	
 	<section class="content" id="about">
-	ouiashfoashfoashfo
+		<h1> About Us</h1>
+		<p>Divide have don't man wherein air fourth. Own itself make have night won't make.</br>
+		A you under Seed appear witch good give. Own give air without fowl moveth dry first</br>
+		heaven fruit, dominion she'd won't very all.</p>
+		<img src = "img/sign.png" alt="sign">
 	</section>
 	
-	<section class="content" id="work">
-	asdasd
+	<section class="content" id="work" onmouseup ="load()" onclick="clear()">
+	
+		<!--<img src = "img/work.jpg" alt="work">-->
+		<h1>Professional Skills</h1>
+		
+		<p>UI/UI DESIGN</p>
+		<div class="loadingBefore" id ="ui" style="--p:75; transform: skew(30deg)"></div>
+		<p>WEB DEVELOPMENT</p>
+		<div class="loadingBefore" id ="web" style="--p:90; transform: skew(30deg)" ></div>
+		<p>MARKETING</p>
+		<div class="loadingBefore" id ="marketing" style="--p:65; transform: skew(30deg)"></div>
+		
 	</section>
 	
 	<section class="content" id="process">

@@ -1,0 +1,62 @@
+
+
+.loadingBefore {
+  position: relative;
+  left:10%;
+  top:0%;
+  margin:5%;
+  background-color: grey;
+  width: 70%;
+  height: 30px;
+  border:2px solid;
+
+  }
+
+.loading {
+
+  
+  &:before {
+    --width: calc(var(--p) * 1%);
+    
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #fff;   //*line colour*/
+    z-index: 0;
+    animation: load 1.7s forwards linear;
+  }
+  
+  &:after {
+    counter-reset: progress var(--p);
+    content: counter(progress) '%';
+    color: #000;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%) skewX(-30deg);
+    z-index: 1;
+  }
+  
+  &#ui {
+    transform: skew(-30deg) translateY(-100%);
+    line-height: 1.5;
+  }
+  &#web {
+    transform: skew(-30deg) translateY(-100%);
+    line-height: 1.5;
+  }
+  &#marketing {
+    transform: skew(-30deg) translateY(-100%);
+    line-height: 1.5;
+  }
+}
+
+
+@keyframes load {
+  to {
+    width: var(--width);
+  }
+}

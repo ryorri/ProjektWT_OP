@@ -16,12 +16,12 @@
 	body
 	{
 		background-color:var(--lightgrey);
-		width:100vw;
+
 	}
 	
 
 /* HAMBURGER */
-a {
+.p-menu a {
   color: white;
   text-decoration: none;
 }
@@ -137,7 +137,6 @@ a {
 main
 {
 	background-color:var(--lightgrey);
-	height:100%;
 	width:100vw;
 	font-family: "Gill Sans";
 }
@@ -410,28 +409,102 @@ section video{
 }
 
 #contact{
-	
+	height:75vh;
+}
+
+#contact p{
+	text-align:center;
+	margin: 0% 5% 10%;
+	font-size:150%;
+}
+
+#contact h1{
+	text-align:center;
+	margin: 0% 5% 10%;
+	font-size:300%;
 }
 
 form
 {
+	display:block;
 	position:relative;
-	left:10%;
 	margin:auto;
+	margin-top:20%;
 }
 input[type=text]{
+	display:block;
 	position:realtive;
 	width: 80%;
 	margin:auto;
 
 }
 
+textarea
+{
+	position:relative;
+	display:block;
+	height:10vh;
+	width:80%;
+	margin:auto;
+	resize:none;
+}
 
-
-
+input[type=submit]{
+	display:block;
+	position: relative;
+	background-color:var(--turq);
+	border-radius: 8px;
+	color:white;
+	font-size: 20px;
+	border:none;
+	margin:auto;
+	margin-top:10%;
+	height:
+	
+}
 
 
 /* MAIN END */
+
+footer{
+	display:block;
+	background-color:black;
+	height:30vh;
+	color:white;
+}
+footer div{
+	display:inline-block;
+	position:relative;
+	text-align:center;
+	
+}
+
+footer h1{
+	font-size:100%;
+	
+}
+
+footer p{
+	font-size:80%;
+}
+
+footer a{
+	font-size:100%;
+}
+.one
+{
+	float:left;
+	width:50%;
+	height:50%;
+	padding-top:10%;
+}
+
+.two
+{
+	float:left;
+	width:33.3%;
+	height:50%;
+}
 
 }
 

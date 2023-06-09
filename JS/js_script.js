@@ -16,3 +16,4 @@ var element1 = document.getElementById("ui");
   element3.classList.add("loading");
 
 }
+

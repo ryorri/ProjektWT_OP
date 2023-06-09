@@ -1,5 +1,6 @@
 
-
+@media(max-width:1023px) /* To mobile */
+{
 .loadingBefore {
   position: relative;
   left:10%;
@@ -59,4 +60,40 @@
   to {
     width: var(--width);
   }
+}
+
+
+
+
+@property --num {
+  syntax: "<integer>";
+  initial-value:0;
+  inherits: false;
+}
+
+.stats {
+	position:relative;
+	left:40%;
+	padding-top:8%;
+  animation: counter 8s ease-in-out;
+  counter-reset: num var(--num);
+  animation-fill-mode: forwards;
+  color:white;
+  height:100px;
+  width:30vw;
+  float:left;
+}
+.stats::after {
+  content: counter(num);
+}
+
+@keyframes counter {
+  0% {
+    --num: 0;
+  }
+  100% {
+    --num: var(--x);
+  }
+}
+
 }

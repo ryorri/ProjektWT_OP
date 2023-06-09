@@ -16,6 +16,7 @@
 	body
 	{
 		background-color:var(--lightgrey);
+		width:100vw;
 	}
 	
 
@@ -26,9 +27,14 @@ a {
 }
 
 .p-menu{
-   height: 0;
-
-   }
+   height: 50px;
+}
+.p-menu img
+{
+	position: absolute;
+	top: 2vh;
+	left: 8vw;
+}
 .navigation
 {
 	background-color:var(--lightgrey)
@@ -142,14 +148,94 @@ main
 {
 	position:relative;
 	height:100vh;
+	width:100%;
 }
 
-section img
+.numbers
 {
-	position: absolute;
-	top: 2vh;
-	left: 8vw;
+	display:inline-block;
+	position:relative;
+	width:49%;
+	background-color:var(--turq);
 }
+
+.counters
+{
+		background-color:var(--turq);
+		text-align:center;
+		width:100vw;
+}
+
+.counters img
+{
+	position:absolute;
+	left:10%;
+	top:30%;
+
+}
+
+
+
+.gallery
+{
+	position:relative;
+	float:left;
+}
+
+
+.gallery img
+{
+	width:50vw;
+	height:25vh;
+	margin:0;
+	
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--tblack);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.gallery:hover .overlay {
+  height: 100%;
+}
+
+.overlay img
+{
+	position:absolute;
+	height:5vh;
+	width:15vw;
+	top: 50%;
+	left: 50%;
+	  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+div.vid h1
+{
+	text-align:center;
+	font-size:250%;
+	margin-top:25%;
+	margin-bottom:5%;
+}
+
+div.vid h2
+{
+	width:80%;
+	text-align:center;
+	font-size:110%;
+	margin: auto;
+	margin-bottom:15%;
+}
+
+
 
 
 #home{
@@ -254,34 +340,91 @@ section img
 	position:relative;
 	margin: 0 auto;
 	color:black;
-	font-size:100%;
+	font-size:150%;
 	padding:5%;
 	padding-top:15%;
 }
 
-#work img
-{
-	
-/*to do*/
-}
+
 
 
 #process{
-	background-color:white;
+	height:180vh;
+}
+#process p
+{
+	
+	display:inline-block;
+	position:absolute;
+	top:40%;
+	left:40%;
+	text-align:center;
+	color:white;
 }
 
+section video{
+	position:relative;
+	margin:auto;
+	width: 90vw;
+}
+
+
+
+
+
 #services{
-	background-color:blue;
+	position:relative;
+	height:80vh;
+}
+
+#services div{
+	position:relative;
+	display:inline;
+	float:left;
+	width:50%;
+	height:20vh;
+	margin:auto;
+}
+
+#services img{
+
+	margin:auto;
+}
+
+#services h1{
+
+	margin:auto;
+	font-size:100%;
+	text-align:center;
+}
+
+#services p{
+
+	margin:auto;
+	font-size:90%;
+	text-align:center;
 }
 
 #testimonials{
-	background-color:white;
+	height:60vh;
 }
 
 #contact{
-	background-color:blue;
+	
 }
 
+form
+{
+	position:relative;
+	left:10%;
+	margin:auto;
+}
+input[type=text]{
+	position:realtive;
+	width: 80%;
+	margin:auto;
+
+}
 
 
 

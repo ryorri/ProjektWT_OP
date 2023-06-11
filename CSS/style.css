@@ -608,7 +608,7 @@ footer a{
 .menu {
 	position:relative;
 	float:right;
-	width: 100%;
+	width: 40%;
 	margin: 0;
 	display: -ms-grid;
 	display: grid;
